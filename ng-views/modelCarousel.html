@@ -1,0 +1,43 @@
+<div
+  class="carousel"
+  >
+  <div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <ul class="classificationNodes">
+        
+        <li
+          ng-repeat="classificationNode in classificationNodes"
+          class="selector {{classificationNode.code}}"
+          ng-class="{'active': classificationNode.active}"
+          >
+          <a ng-click="setCars(classificationNode)">
+            {{classificationNode.title}}
+          </a>
+          
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="slideContainer">
+        <div class="carCarousel" id="carousel1">
+          <div>
+            <ul>
+              <li ng-repeat="item in currentItems">
+                <a ng-href="{{item.url}}"><img   ng-src="{{item.cdnImageSidePath}}" width="210" height="85" >
+                  <div class="modelLabel"><span ng-if="item.itemType=='range'">Range </span>{{item.name}}</div>
+
+ 
+
+                </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

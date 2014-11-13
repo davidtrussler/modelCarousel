@@ -1,0 +1,126 @@
+/* line 3, ../scss/modelCarousel.scss */
+#modelCarousel {
+  font-family: audiType_extended_normal, Verdana, Geneva, sans-serif;
+}
+/* line 7, ../scss/modelCarousel.scss */
+#modelCarousel .spinner-hide .audi-loader {
+  visibility: hidden;
+}
+/* line 11, ../scss/modelCarousel.scss */
+#modelCarousel ul.classificationNodes {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+/* line 16, ../scss/modelCarousel.scss */
+#modelCarousel ul.classificationNodes li {
+  float: left;
+  position: relative;
+  display: block;
+  margin: 0 0 0 50px;
+}
+/* line 22, ../scss/modelCarousel.scss */
+#modelCarousel ul.classificationNodes li.active {
+  border-bottom: 2px solid #BE1331;
+}
+/* line 25, ../scss/modelCarousel.scss */
+#modelCarousel ul.classificationNodes li.active a {
+  color: #BE1331;
+}
+/* line 30, ../scss/modelCarousel.scss */
+#modelCarousel ul.classificationNodes li a {
+  line-height: 20px;
+  padding: 5px 0;
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+/* line 39, ../scss/modelCarousel.scss */
+#modelCarousel ul.classificationNodes li:first-child {
+  margin-left: 0;
+}
+/* line 44, ../scss/modelCarousel.scss */
+#modelCarousel .carCarousel {
+  display: block;
+  position: relative;
+  /* padding: 5px; */
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1400px;
+  height: 215px;
+  width: 100%;
+  text-align: center;
+}
+/* line 56, ../scss/modelCarousel.scss */
+#modelCarousel .carCarousel ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+/* line 61, ../scss/modelCarousel.scss */
+#modelCarousel .carCarousel li {
+  display: block;
+  float: left;
+  margin: 5px;
+  padding: 0;
+}
+/* line 67, ../scss/modelCarousel.scss */
+#modelCarousel .carCarousel li img {
+  display: block;
+  margin: 0;
+}
+/* line 72, ../scss/modelCarousel.scss */
+#modelCarousel .carCarousel li img:hover {
+  -ms-transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+/* line 79, ../scss/modelCarousel.scss */
+#modelCarousel .modelLabel {
+  float: left;
+  left: 34px;
+  position: relative;
+}
+/* line 83, ../scss/modelCarousel.scss */
+#modelCarousel .carCarousel .microfiche-controls .microfiche-button {
+  display: block;
+  position: absolute;
+  width: 35px;
+  height: 60px;
+  /* left: 50%; */
+  /* top: 50%; */
+  margin-top: -30px;
+  background-image: url(../../imgs/arrows.png);
+  background-size: 70px 120px;
+  background-repeat: no-repeat;
+  background-color: white;
+  opacity: 0.8;
+  border: 0;
+}
+/* line 92, ../scss/modelCarousel.scss */
+.ie8 #modelCarousel .carCarousel .microfiche-controls .microfiche-button {
+  background-image: url(../../imgs/arrows_small.png);
+}
+/* line 102, ../scss/modelCarousel.scss */
+#modelCarousel .carCarousel .microfiche-controls .microfiche-prev-button {
+  background-position: 0 0;
+  left: 0;
+  top: 50px;
+  margin-right: -17.5px;
+}
+/* line 109, ../scss/modelCarousel.scss */
+#modelCarousel .carCarousel .microfiche-controls .microfiche-next-button {
+  background-position: 100% 0;
+  top: 50px;
+  left: 99%;
+  left: calc(100% - 17.5px);
+  margin-left: -17.5px;
+}
+/* line 117, ../scss/modelCarousel.scss */
+#modelCarousel .carCarousel .microfiche-controls .microfiche-prev-button[disabled="disabled"] {
+  background-position: 0 100%;
+}
+/* line 121, ../scss/modelCarousel.scss */
+#modelCarousel .carCarousel .microfiche-controls .microfiche-next-button[disabled="disabled"] {
+  background-position: 100% 100%;
+}

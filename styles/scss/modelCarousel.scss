@@ -1,0 +1,124 @@
+@import "../../../../global/styles/scss/bootstrap-custom/variables";
+
+#modelCarousel {
+
+font-family: audiType_extended_normal, Verdana, Geneva, sans-serif;
+
+.spinner-hide .audi-loader{
+    visibility: hidden;
+}
+
+ul.classificationNodes {
+	list-style:none;
+	margin: 0 auto;
+	padding: 0; 
+
+	li {
+		float: left;
+		position: relative;
+		display: block;
+		margin: 0 0 0 50px;
+
+		&.active {
+			border-bottom: 2px solid #BE1331;
+
+			a {
+				color:#BE1331;
+			}
+		}
+
+		a {
+			line-height: 20px;
+			padding: 5px 0;
+			position: relative;
+			display: block;
+			text-decoration: none;
+		}
+	}
+
+	li:first-child {
+		margin-left: 0;
+	}
+}
+
+.carCarousel {
+    display: block;
+    position: relative;
+    /* padding: 5px; */
+    margin-right: auto;
+	margin-left: auto;
+	max-width: 1400px;
+  	height:215px;
+  	width: 100%;	
+	text-align: center; 
+}
+
+  .carCarousel ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .carCarousel li {
+    display: block;
+    float: left;
+    margin: 5px;
+    padding: 0;
+  }
+    .carCarousel li img {
+      display: block;
+      margin: 0;
+    }
+
+        .carCarousel li img:hover {
+ -ms-transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
+    }
+
+
+.modelLabel{float: left;
+left: 34px;
+position:relative}
+
+	.carCarousel .microfiche-controls .microfiche-button {
+		display: block; 
+		position: absolute; 
+		width: 35px; 
+		height: 60px;  
+		/* left: 50%; */ 
+		/* top: 50%; */ 
+		margin-top: -30px;  
+		background-image: url(../../imgs/arrows.png); 
+		.ie8 & {
+			background-image: url(../../imgs/arrows_small.png); 
+		}
+		background-size: 70px 120px; 
+		background-repeat: no-repeat;
+		background-color: white;
+		opacity:0.8;
+		border: 0;
+	}
+
+	.carCarousel .microfiche-controls .microfiche-prev-button {
+		background-position: 0 0; 
+		left: 0;
+		top: 50px; 
+		margin-right: -17.5px;
+	}
+
+	.carCarousel .microfiche-controls .microfiche-next-button {
+		background-position: 100% 0; 
+		top: 50px;
+		left: 99%;
+		left: calc(100% - 17.5px);
+		margin-left: -17.5px;
+	}
+
+	.carCarousel .microfiche-controls .microfiche-prev-button[disabled="disabled"] {
+		background-position: 0 100%; 
+	}
+
+	.carCarousel .microfiche-controls .microfiche-next-button[disabled="disabled"] {
+		background-position: 100% 100%; 
+	}
+}
